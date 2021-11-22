@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body width="100%" bgcolor="lightgrey">
+        <h1 align="center" bgcolor="green">Multiple Form Types</h1>
+        <table width="100%" cellpadding="5">
+            <tr>
+                <td>
+                    <table width="70%" align="center"  cellpadding="10">
+                        <tr>
+                            <td width="50%"  bgcolor="lightblue">
+                                <form method="post">
+                                    <h2 align="center">Student Enrollment Form</h2>
+                                    <p>Please fill out you basic information below.</p>
+                                    <p>Student Name</p>
+                                    <input type="text" name="StuFrstName" placeholder="First" size="24"><br>
+                                    <br>
+                                    <input type="text" name="StuLastName" placeholder="Last" size="24"><br>
+                                    <p>Student Email</p>
+                                    <input type="email" name="StuEmail" placeholder="E-mailAddress" size="24" required><br>
+                                    <p>Student Phone</p>
+                                    <input type="text" name="StuPhone" value="+91" size="24"><br>
+                                    <p>Student Address</p>
+                                    <textarea cols="25" rows="2" placeholder="StreetAddressLine1"></textarea><br>
+                                    <br>
+                                    <textarea cols="25" rows="2" placeholder="StreetAddressLine2"></textarea><br>
+                                    <br>
+                                    <input type="text" name="CityName" placeholder="City" size="24"><br>
+                                    <br>
+                                    <input type="text" name="Region" placeholder="Region" size="24"><br>
+                                    <br>
+                                    <input type="text" name="PostalCode" placeholder="PostalCode" size="24"><br>
+                                    <br>
+                                    <input type="text" name="Country" placeholder="Country" size="24"><br>
+                                    <p>Graduation Date<br>
+                                    <small>(when did you graduated high school?)</small><br></p>
+                                    <input type="date" name="date"><br>
+                                    <p>Highest Level of Education Completed</p>
+                                    <input type="text" name="Education" placeholder="Ex:BSC" size="24">
+                                    <br>
+                                    <p>What areas Wouldyou like to study?</p>
+                                    <input type="checkbox" name="subjects[]" value="Maths" >Maths
+                                    <input type="checkbox" name="subjects[]" value="Physics" >Physics
+                                    <input type="checkbox" name="subjects[]" value="Chemistry" >Chemistry<br>
+                                    <input type="checkbox" name="subjects[]" value="Botany" >Botany
+                                    <input type="checkbox" name="subjects[]" value="Geography" >Geography
+                                    <input type="checkbox" name="subjects[]" value="Literature" >Literature<br>
+                                    <input type="checkbox" name="subjects[]" value="History" >History
+                                    <input type="checkbox" name="subjects[]" value="Other" >Other<br>
+                                    <p>Do you need campus accommodation?</p>
+                                    <input type="radio" name="asking" value="yes" >Yes
+                                    <input type="radio" name="asking" value="No" >No<br>
+                                    <p>Do you play sports?</p>
+                                    <input type="radio" name="asking" value="yes" >Yes
+                                    <input type="radio" name="asking" value="No" >No<br>
+                                    <p>Known Languages</p>
+                                    <input type="checkbox" name="languages[]" value="Tamil" >Tamil
+                                    <input type="checkbox" name="languages[]" value="English" >English
+                                    <input type="checkbox" name="languages[]" value="Spanish" >Spanish<br>
+                                    <input type="checkbox" name="languages[]" value="Germany" >Germany
+                                    <input type="checkbox" name="languages[]" value="French" >French
+                                    <input type="checkbox" name="languages[]" value="Other" >Other<br>
+                                    <br>
+                                    <input type="submit" value="Submit Student Enrollment">
+                                </form>
+                            </td>
+                            <td width="50%" bgcolor="yellow">
+                                <form method="post">
+                                    <h2 align="center">Website Feedback Form</h2>
+                                    <p>Please fill out this brief feedback form so we can ensure a top experience to all of our visitors.</p>
+                                    <table width="100%" cellpadding="2">
+                                        <tr>
+                                            <td width="50%">
+                                                <p>Email<small>(optional)</small></p>
+                                                <input type="email" name="email" required>
+                                            </td>
+                                            <td width="50%">
+                                                <p>Name</p>
+                                                <input type="text" name="name">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p>Is this ou first visit to the website?</p>
+                                    <input type="radio" name="asking" value="yes" >Yes<br>
+                                    <input type="radio" name="asking" value="No" >No<br>
+                                    <p>Wht is the primary reason for your visit to the website?</p>
+                                    <textarea cols="=35" rows="3"></textarea><br>
+                                    <p>How easy is it to find information on the site?</p>
+                                    <input type="checkbox" name="information[]" value="VeryEasy" >Very Easy<br>
+                                    <input type="checkbox" name="information[]" value="Easy" >Easy<br>
+                                    <input type="checkbox" name="information[]" value="Average" >Average<br>
+                                    <input type="checkbox" name="information[]" value="Difficult" >Difficult<br>
+                                    <input type="checkbox" name="information[]" value="VeryDifficult">Very Difficult<br>
+                                    <p>Were you able to find what you needed?</p>
+                                    <input type="radio" name="asking" value="yes" >Yes<br>
+                                    <input type="radio" name="asking" value="No" >No<br>
+                                    <p>If you did not find what you needed,please tell us what info you were seeking?</p>
+                                    <textarea cols="=35" rows="3"></textarea><br>
+                                    <p>What is the likelihood that you will return to the site?</p>
+                                    <input type="checkbox" name="information[]" value="ExtremelyLikely" >Extremely Likely<br>
+                                    <input type="checkbox" name="information[]" value="VeryLikely" >Very Likely<br>
+                                    <input type="checkbox" name="information[]" value="ModeratelyLikely" >Moderately Likely<br>
+                                    <input type="checkbox" name="information[]" value="SlightlyLikely" >Slightly Likely<br>
+                                    <input type="checkbox" name="information[]" value="UnlikelyToReturn">Unlikely To Return<br>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="100%">
+                                                <p>Please provide any additional omments or suggestion.<small>(optional)</small></p>
+                                                <textarea cols="=50" rows="3"></textarea>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <br>
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="100%" align="center">
+                                                <input type="submit" value="Send Feedback">
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" bgcolor="lightgreen">
+                              <form method="post">
+                                <h2>Quiz & Worksheet - Backend & Frontend Development Comparison</h2>
+                                <ol>
+                                    <li>
+                                        <p>The frontend development constitutes</p>
+                                        <input type="radio" name="frontEnd" value="designAndDatabase" >web design and database<br>
+                                        <input type="radio" name="frontEnd" value="PaymentAndSecurity" >payment methods and security<br>
+                                        <input type="radio" name="frontEnd" value="userexperAndDatasecure" >users experience and data security<br>
+                                        <input type="radio" name="frontEnd" value="AstheticsAndUser" >the asesthetics and user's experience<br>
+                                    </li>
+                                    <li>
+                                        <p>The three parts that constitute backend development are:</p>
+                                        <input type="radio" name="backend" value="constitute" >server,database,JAVA<br>
+                                        <input type="radio" name="backend" value="constitute" >server,application,database<br>
+                                        <input type="radio" name="backend" value="constitute" >database,MYSQL,application<br>
+                                        <input type="radio" name="backend" value="constitute" >web design,server,application<br>
+                                    </li>
+                                    <li>
+                                        <p>Which of the following processes are driven by the backend development?</p>
+                                        <input type="radio" name="backend" value="constitute" >inventory upload,price mapping,database development<br>
+                                        <input type="radio" name="backend" value="constitute" >menu design,database development,application interaction<br>
+                                        <input type="radio" name="backend" value="constitute" >customer purchase processing,application interaction,menu design<br>
+                                        <input type="radio" name="backend" value="constitute" >customer purchase processing,application interaction,database<br>
+                                    </li>
+                                    <br>
+                                    <input type="submit" value="Send"><br>
+                                    <table width="100%">
+                                        <tr>
+                                            <td align="center" width="100%">
+                                                <h3><a href="#" target="_blank">Create your account to access this entire worksheet</a></h3>
+                                                <p><small>A Premium gives you access to all lessons, practice exams, quizzes & worksheets</small></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td align="center" width="33%">
+                                                            <img src="image01/icons8-lesson-64.png" width="50" height="50"><br>
+                                                            <p>Access to all video lessons</p>
+                                                        </td>
+                                                        <td align="center" width="33%">
+                                                            <img src="image01/icons8-general-ledger-64.png" width="50" height="50"><br>
+                                                            <p>Quizzes, practice exams & worksheets</p>
+                                                        </td>
+                                                        <td align="center" width="33%">
+                                                            <img src="image01/icons8-question-64.png" width="50" height="50"><br>
+                                                            <p>Access to experts for homework questions</p>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <p><small>&copy; copyright 2003-2021Study.com. All other &trade;trademarks and &copy;copyrights are the property of their respective owners. all rights reserved.  <small></p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </ol>
+                              </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center" bgcolor="lightgreen">
+                              <form method="post">
+                                <a href="#" target="_blank"><input type="submit" value="Next Page"></a>
+                              </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

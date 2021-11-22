@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body width="100%" bgcolor="lightgrey" >
+      <h1 align="center" bgcolor="green">Multiple Form Types</h1>  
+      <table width="100%" >
+          <tr>
+              <td>
+                  <table width="70%" align="center"  cellpadding="10">
+                      <tr>
+                          <td width="50%"  bgcolor="lightblue">
+                            <form method="get">
+                                <h2 align="center"> Login Form</h2>
+                                <p>Email</p>
+                                <input type="email" name="email" placeholder="EmailAddress" required><br>
+                                <p>Password</p>
+                                <input type="password" name="password" placeholder="YourPassword" max="10"><br>
+                                <p>Forget Password?</p>
+                                <input type="submit" value="login">
+                            </form>
+                          </td>
+                          <td  bgcolor="yellow">
+                             <form method="post">
+                                <h2 align="center">Forget Password</h2>
+                                <p>Enter your e-mail address and we all send you a link to reset your password.</p>
+                                <br>
+                                <input type="email" name="email" placeholder="E-mailAddress" required>
+                                <br>
+                                <br>
+                                <input type="submit" value="SUBMIT">
+                             </form>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td width="50%" bgcolor="pink">
+                              <form method="post">
+                                  <h2>Sign in Now</h2>
+                                  <h4>Sign in using social media to get quick access</h4>
+                                  <table cellspacing="5" cellpadding="5">
+                                      <tr>
+                                          <td width="50%" bgcolor="lightgreen">
+                                             <a href="https://www.facebook.com" target="_blank"><img src="image/icons8-facebook.gif" alt="facbook icon" align="center" width="20" height="20">Facebook</a>
+                                          </td>
+                                          <td width="50%" bgcolor="red">
+                                             <a href="https://www.google.com" target="_blank"><img src="image/icons8-google.gif" alt="google icon" align="center" width="20" height="20">Google</a>
+                                          </td>
+                                      </tr>
+                                  </table>
+                                  <h3 align="center">------ OR ------</h3>
+                                  <p>Username</p>
+                                  <input type="text" name="Username"  placeholder="YourName" required><br>
+                                  <p>Password</p>
+                                  <input type="password" name="password" placeholder="YourPassword" required><br>
+                                  <br>
+                                  <input type="checkbox" name="SubmitDetails[]" value="RememberMe" checked>Remember Me<br>
+                                  <br>
+                                  <input type="checkbox" name="Terms&Privacy[]" value="TermsAndPrivacyPolicy " checked disabled>I Accept Terms Of Uses & Privacy Policy.<br>
+                                  <br>
+                                  <input type="submit" value="Sign In"><br>
+                                  <p>Have not an account yet?<a href="#" target="_blank">Sign Up</a></p>
+                              </form>
+                          </td>
+                          <td width="50%" bgcolor="orange">
+                               <form method="post">
+                                 <h2 align="center">Sign Up</h2>
+                                 <p align="center">Already a member?<a href="#" target="_blank">SignIn here</a></p>
+                                 <p>Username or Email</p>
+                                 <input type="text" name="UsernameOrEmail"  placeholder="NameOrEmail" required><br>
+                                 <p>Password</p>
+                                 <input type="password" name="password" placeholder="YourPassword" required><br>
+                                 <br>
+                                 <input type="submit" value="Sign Up"><br>
+                                 <br>
+                                 <h3 align="center">------OR------</h3>
+                                 <table align="center">
+                                    <tr>
+                                       <td width="50%" align="right">
+                                          <a href="https://www.facebook.com" target="_blank"><img src="image/icons8-facebook.gif" alt="facbook icon" align="center" width="30" height="30"></a>
+                                        </td>
+                                        <td width="50%" align="left">
+                                           <a href="https://www.google.com" target="_blank"><img src="image/icons8-google.gif" alt="google icon" align="center" width="30" height="30"></a>
+                                        </td>
+                                    </tr>
+                                 </table>
+                               </form>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td bgcolor="green" width="50%">
+                              <form method="post">
+                                <h2 align="center">Student Registration Form</h2>
+                                <p>Name of the Applicant</p>
+                                <input type="text" name="firstname"  placeholder="FirstName" size="25" required><br>
+                                <br> 
+                                <input type="text" name="lastname"  placeholder="LastName" size="25" required>
+                                <p>Date of Birth</p>
+                                <input type="date" name="DOB" required><br>
+                                <p>Gender</p>
+                                <input type="radio" name="gender" value="male" >Male
+                                <input type="radio" name="gender" value="male" >Female
+                                <input type="radio" name="gender" value="male" >Other
+                                <br>
+                                <p>Details of Sibilings</p>
+                                <textarea name="DetailsOfSibilings" placeholder="DetailsOfSibilings" cols="45" rows="5">Enter your Sibiings details</textarea>
+                                <br>
+                                <h3>Parent's Information</h3>
+                                <p>Father Name</p>
+                                <input type="text" name="firstname"  placeholder="FirstName" size="25" required><br>
+                                <br>
+                                <input type="text" name="lastname"  placeholder="LastName" size="25" required>
+                                <p>Father Qualification</p>
+                                <input type="text" name="FatherQualification"  placeholder="EnterFatherQualification" size="40" required><br>
+                                <p>Phone</p>                                      
+                                <input type="text" name="FatherPhone" placeholder="+91" size="25" required><br>
+                                <p> Email</p>
+                                <input type="email" name="FatherEmail"  placeholder="EnterFatherEmail" size="25" required>
+                                <p>Father Occupation</p>
+                                <input type="text" name="FatherOccupation"  placeholder="EnterFatherOccupation" size="40" required>
+                                <p>Mother Name</p>
+                                <input type="text" name="firstname"  placeholder="FirstName" size="25" required><br>
+                                <br>
+                                <input type="text" name="LastName"  placeholder="LastName" size="25" required>
+                                <p>Mother Qualification</p>
+                                <input type="text" name="MotherQualification"  placeholder="EnterMotherQualification" size="40" required><br>
+                                <p>Phone</p>                                      
+                                <input type="text" name="MotherPhone" placeholder="+91" size="25" required><br>
+                                <p> Email</p>
+                                <input type="email" name="MotherEmail"  placeholder="EnterMotherEmail" size="25" required>
+                                <p>Father Occupation</p>
+                                <input type="text" name="MotherOccupation"  placeholder="EnterMotherOccupation" size="40" required>
+                                <p>Address</p>
+                                <textarea name="Address" placeholder="StreetAddressline 1" cols="45" rows="2">Address line 1</textarea>
+                                <br>
+                                <br>
+                                <textarea name="Address" placeholder="StreetAddressline 2"cols="45" rows="2">Address line 2</textarea>
+                                <br>
+                                <br>
+                                <input type="text" name="CityName"  placeholder="City" size="25" required><br>
+                                <br>
+                                <input type="text" name="region name"  placeholder="Region" size="25" required><br>
+                                <br>
+                                <input type="text" name="PostalCode"  placeholder="EnterPin-code" size="25" required> 
+                                <select >
+                                    <option value="Nationality" selected>Nationality</option>
+                                    <option value="Asia">Asia</option>
+                                    <option value="Africa">Africa</option>
+                                    <option value="Antartica">Antartica</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="America">America</option>
+                                    <option value="Beligiam">Beligiam</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="China">China</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="India">India</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Russia">Russia"</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Tibetan">Tibetan</option>
+                                    <option value="Turk">Turk</option>
+                                    <option value="Welsh">Welsh</option>
+                                    <option value="Zambian">Zambian</option>
+                                </select>
+                                <p>Payment Details</p>
+                                <input type="checkbox" name="Payment[]" value="cash" >Cash<br>
+                                <input type="checkbox" name="Payment[]" value="card" >Card<br>
+                                <input type="checkbox" name="Payment[]" value="check" >Check<br>
+                                <p>Terms of Service</p>
+                                <input type="checkbox" name="TermsOfService[]" value="TermsOfService " checked disabled>I Agree to the<a href="#" target="_blank">Terms Of Service.</a><br>
+                                <br>
+                                <input type="submit" value="SEND"><br>
+                              </form>
+                          </td>
+                          <td bgcolor="red">
+                              <form method="post">
+                                  <h1 align="center">Health Survey Form</h1>
+                                  <p>we are pleased to invite you in a 5-minute Health Survey.our patient Health Survey include general and non-invasive questions about your health and habits.Answering to all our questions will help us imlementthe best functional health improvement programs.</p>
+                                  <p>What is your gender?</p>
+                                  <input type="radio" name="gender" value="male" >Male<br>
+                                  <input type="radio" name="gender" value="male" >Female<br>
+                                  <input type="radio" name="gender" value="male" >Other<br>
+                                  <p>What is your age?</p>
+                                  <input type="number" name="age" placeholder="YourAge">
+                                  <p>What is your height?</p>
+                                  <input type="text" name="height" placeholder="YourHeight" size="25">
+                                  <p>What is your weight?</p>
+                                  <input type="text" name="weight" placeholder="YourWeight" size="25">
+                                  <p>Have you ever smoked?</p>
+                                  <input type="radio" name="SmokeAsking" value="yes" >yes<br>
+                                  <input type="radio" name="SmokeAsking" value="no" >no<br>
+                                  <p>Do you regularly practice the following exercises?</p>
+                                  <input type="checkbox" name="exercise[]" value="walking" >Walking<br>
+                                  <input type="checkbox" name="exercise[]" value="running" >Running<br>
+                                  <input type="checkbox" name="exercise[]" value="swimming" >Swimming<br>
+                                  <input type="checkbox" name="exercise[]" value="others" >Others<br>
+                                  <input type="checkbox" name="exercise[]" value="NoExercise" >I don't exercise<br>
+                                  <p>If ou walk for exercise, how long does it take you to walk one mile?</p>
+                                  <input type="text" name="walking" size="25">
+                                  <p>If you run for exrcise, how long does it take you to run one mile?</p>
+                                  <input type="text" name="running" size="25">
+                                  <p>How many hours a week do you usually exercise?</p>
+                                  <input type="text" name="hours" size="25">
+                                  <p>How many hours a day do you usually sleep?</p>
+                                  <input type="text" name="SleepingHours" size="25">
+                                  <br>
+                                  <br>
+                                  <input type="submit" value="Send the Health Survey">
+                              </form>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td bgcolor="lightgreen">
+                              <form method="post">
+                                  <h1 align="center">Subscribtion Form</h1>
+                                  <h3>Easy to create and use</h3>
+                                  <p>Create your own custom form to collect subscribers</p>
+                                  <input type="email" name="subscribe" size="25" required>
+                                  <br>
+                                  <br>
+                                  <select>
+                                      <option value="select" selected>Select</option>
+                                      <option value="Drop-DownList">Drop-down list</option>
+                                      <option value="subscribe">Subscribe</option>
+                                  </select>
+                                  <br>
+                                  <br>
+                                  <input type="radio" name="gender" value="male" >Male
+                                  <input type="radio" name="gender" value="male" >Female
+                                  <br>
+                                  <br>
+                                  <input type="checkbox" name="asking[]" value="Newsletter" checked disabled>I want to recieve Newsletters<br>
+                                  <br>
+                                  <input type="submit" value="Submit">
+                              </form>
+                          </td>
+                          <td bgcolor="crimsonred">
+                              <form method="post">
+                                <h2>Contact Form</h2>
+                                <h4>YOU CAN FIND US HERE</h4>
+                                <p>Sample address, Sample street, Pin code.</p>
+                                <p><a href="#" target="_blank">Or Maps</a></p>
+                                <input type="text" name="YourName" placeholder="YourName" ><br>
+                                <br>
+                                <input type="email" name="email" placeholder="E-mail" required><br>
+                                <br>
+                                <input type="text" name="company" placeholder="Company"><br>
+                                <br>
+                                <input type="text" name="Phone" placeholder="Phone" value="+91" required><br>
+                                <br>
+                                <textarea placeholder="YourMessage" cols="20" rows="3"></textarea><br>
+                                <br>
+                                <button type="submit">Send Message</button><br>
+                              </form>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td colspan="2" bgcolor="apple">
+                              <form method="post" enctype="multipart/form-data">
+                                <h2 align="center">Job Application Form</h2>
+                                <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+                                <br>
+                                <p>Company Name</p>
+                                <input type="text" name="YourName" value="Brainvalley Software Private Limited" size="35" readonly ><br>
+                                <p>Name</p>
+                                <input type="text" name="YourName" placeholder="First" size="35" >&nbsp; &nbsp;<input type="text" name="YourName" placeholder="Last" size="35"><br>
+                                <br>
+                                <p>Email</p>
+                                <input type="email" name="email" placeholder="Email" size="35" required >&nbsp; &nbsp;<input type="text" name="YourName" placeholder="Phone" size="35"><br>
+                                <br>
+                                <p>What is position are you applying for?</p>
+                                <select>
+                                    <option value="selectJob">Select job</option>
+                                    <option value="frontEnd">FrontEnd Developer</option>
+                                    <option value="backEnd">BackEnd Developer</option>
+                                    <option value="fullStack">FullStack Developer</option>
+                                </select>
+                                <p>Available start date</p>
+                                <input type="date" name="date"><br>
+                                <br>
+                                <p>How many years of experience?</p>
+                                <input type="radio" name="experience" value="years">0-1 Years<br>
+                                <input type="radio" name="experience" value="years">1-3 Years<br>
+                                <input type="radio" name="experience" value="years">5 Years<br>
+                                <input type="radio" name="experience" value="years">7 Years<br>
+                                <br>        
+                                <p>What is your current employment status?</p>
+                                <input type="radio" name="employee" value="employed">Employed<br>
+                                <input type="radio" name="employee" value="self-employed">Self-Employed<br>
+                                <input type="radio" name="employee" value="unemployed">Un-employed<br>
+                                <input type="radio" name="employee" value="student">Student<br>
+                                <br>
+                                <p>Submit your Resume</p>
+                                <input type="file" name="resume" placeholder="No File Choosen"><br>
+                                <br>
+                                <p>Would you like to list references?</p>
+                                <input type="radio" name="likedjob" value="Yes">Yes<br>
+                                <input type="radio" name="unlikejob" value="No">No<br>
+                                <br>
+                                <input type="submit" value="Apply For The Job">
+                              </form>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td align="center" colspan="2" bgcolor="apple">
+                             <form method="post">
+                               <a href="Assignment-0D-2.html" target="_blank"><input type="submit" value="Next Page"></a>
+                             </form>
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+      </table>  
+    </body>
+</html>
