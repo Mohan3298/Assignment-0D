@@ -4,25 +4,28 @@
         <title></title>
     </head>
     <body width="100%" bgcolor="lightgrey" >
-      <h1 align="center" bgcolor="green">Multiple Form Types</h1>  
-      <table width="100%" >
+      <h1 align="center" bgcolor="green" id="Forms">Multiple Form Types</h1>  
+      <table >
           <tr>
               <td>
                   <table width="70%" align="center"  cellpadding="10">
                       <tr>
-                          <td width="50%"  bgcolor="lightblue">
-                            <form method="get">
+                          <td width="50%"  bgcolor="lightblue" >
+                            <form method="get" id="form1">
                                 <h2 align="center"> Login Form</h2>
                                 <p>Email</p>
-                                <input type="email" name="email" placeholder="EmailAddress" required><br>
+                         width="100%"        <input type="email" name="email" placeholder="EmailAddress" required><br>
                                 <p>Password</p>
                                 <input type="password" name="password" placeholder="YourPassword" max="10"><br>
                                 <p>Forget Password?</p>
-                                <input type="submit" value="login">
+                                <input type="submit" value="Login">
+                                <input type="reset" value="Cancel">
                             </form>
+                            <br>
+                            <a href="#Forms">BackToForms</a>
                           </td>
                           <td  bgcolor="yellow">
-                             <form method="post">
+                             <form method="post" id="form2">
                                 <h2 align="center">Forget Password</h2>
                                 <p>Enter your e-mail address and we all send you a link to reset your password.</p>
                                 <br>
@@ -30,12 +33,15 @@
                                 <br>
                                 <br>
                                 <input type="submit" value="SUBMIT">
+                                <input type="reset" value="CANCEL">
                              </form>
+                             <br>
+                             <a href="#Forms">BackToForms</a>
                           </td>
                       </tr>
                       <tr>
                           <td width="50%" bgcolor="pink">
-                              <form method="post">
+                              <form method="post" id="form3">
                                   <h2>Sign in Now</h2>
                                   <h4>Sign in using social media to get quick access</h4>
                                   <table cellspacing="5" cellpadding="5">
@@ -61,9 +67,11 @@
                                   <input type="submit" value="Sign In"><br>
                                   <p>Have not an account yet?<a href="#" target="_blank">Sign Up</a></p>
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                           <td width="50%" bgcolor="orange">
-                               <form method="post">
+                               <form method="post" id="form4">
                                  <h2 align="center">Sign Up</h2>
                                  <p align="center">Already a member?<a href="#" target="_blank">SignIn here</a></p>
                                  <p>Username or Email</p>
@@ -85,11 +93,13 @@
                                     </tr>
                                  </table>
                                </form>
+                               <br>
+                               <a href="#Forms">BackToForms</a>
                           </td>
                       </tr>
                       <tr>
                           <td bgcolor="green" width="50%">
-                              <form method="post">
+                              <form method="post" id="form5">
                                 <h2 align="center">Student Registration Form</h2>
                                 <p>Name of the Applicant</p>
                                 <input type="text" name="firstname"  placeholder="FirstName" size="25" required><br>
@@ -171,11 +181,14 @@
                                 <p>Terms of Service</p>
                                 <input type="checkbox" name="TermsOfService[]" value="TermsOfService " checked disabled>I Agree to the<a href="#" target="_blank">Terms Of Service.</a><br>
                                 <br>
-                                <input type="submit" value="SEND"><br>
+                                <input type="submit" value="SEND">
+                                <input type="reset" value="CANCEL">
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                           <td bgcolor="red">
-                              <form method="post">
+                              <form method="post" id="form6">
                                   <h1 align="center">Health Survey Form</h1>
                                   <p>we are pleased to invite you in a 5-minute Health Survey.our patient Health Survey include general and non-invasive questions about your health and habits.Answering to all our questions will help us imlementthe best functional health improvement programs.</p>
                                   <p>What is your gender?</p>
@@ -208,12 +221,15 @@
                                   <br>
                                   <br>
                                   <input type="submit" value="Send the Health Survey">
+                                  <input type="reset" value="Cancel">
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                       </tr>
                       <tr>
                           <td bgcolor="lightgreen">
-                              <form method="post">
+                              <form method="post" id="form7">
                                   <h1 align="center">Subscribtion Form</h1>
                                   <h3>Easy to create and use</h3>
                                   <p>Create your own custom form to collect subscribers</p>
@@ -234,10 +250,13 @@
                                   <input type="checkbox" name="asking[]" value="Newsletter" checked disabled>I want to recieve Newsletters<br>
                                   <br>
                                   <input type="submit" value="Submit">
+                                  <input type="reset" value="Cancel">
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                           <td bgcolor="crimsonred">
-                              <form method="post">
+                              <form method="post" id="form8">
                                 <h2>Contact Form</h2>
                                 <h4>YOU CAN FIND US HERE</h4>
                                 <p>Sample address, Sample street, Pin code.</p>
@@ -252,13 +271,16 @@
                                 <br>
                                 <textarea placeholder="YourMessage" cols="20" rows="3"></textarea><br>
                                 <br>
-                                <button type="submit">Send Message</button><br>
+                                <button type="submit">Send Message</button>
+                                <input type="reset" value="Cancel">
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                       </tr>
                       <tr>
                           <td colspan="2" bgcolor="apple">
-                              <form method="post" enctype="multipart/form-data">
+                              <form method="post" enctype="multipart/form-data" id="form9">
                                 <h2 align="center">Job Application Form</h2>
                                 <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
                                 <br>
@@ -300,7 +322,10 @@
                                 <input type="radio" name="unlikejob" value="No">No<br>
                                 <br>
                                 <input type="submit" value="Apply For The Job">
+                                <input type="reset" value="Cancel">
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
                           </td>
                       </tr>
                       <tr>

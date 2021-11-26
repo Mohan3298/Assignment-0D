@@ -4,14 +4,14 @@
         <title> </title>
     </head>
     <body width="100%" bgcolor="lightgrey">
-        <h1 align="center" bgcolor="green">Multiple Form Types</h1>
+        <h1 align="center" bgcolor="green" id="Forms">Multiple Form Types</h1>
         <table width="100%" cellpadding="5">
             <tr>
                 <td>
                     <table width="70%" align="center"  cellpadding="10">
                         <tr>
                             <td width="50%"  bgcolor="lightblue">
-                                <form method="post">
+                                <form method="post" id="form10">
                                     <h2 align="center">Student Enrollment Form</h2>
                                     <p>Please fill out you basic information below.</p>
                                     <p>Student Name</p>
@@ -64,10 +64,13 @@
                                     <input type="checkbox" name="languages[]" value="Other" >Other<br>
                                     <br>
                                     <input type="submit" value="Submit Student Enrollment">
+                                    <input type="reset" value="Cancel">
                                 </form>
+                                <br>
+                                <a href="#Forms">BackToForms</a>
                             </td>
                             <td width="50%" bgcolor="yellow">
-                                <form method="post">
+                                <form method="post" id="form11">
                                     <h2 align="center">Website Feedback Form</h2>
                                     <p>Please fill out this brief feedback form so we can ensure a top experience to all of our visitors.</p>
                                     <table width="100%" cellpadding="2">
@@ -117,15 +120,18 @@
                                         <tr>
                                             <td width="100%" align="center">
                                                 <input type="submit" value="Send Feedback">
+                                                <input type="reset" value="Cancel">
                                             </td>
                                         </tr>
                                     </table> 
                                 </form>
+                                <br>
+                                <a href="#Forms">BackToForms</a>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" bgcolor="lightgreen">
-                              <form method="post">
+                              <form method="post" id="form12">
                                 <h2>Quiz & Worksheet - Backend & Frontend Development Comparison</h2>
                                 <ol>
                                     <li>
@@ -162,15 +168,15 @@
                                             <td>
                                                 <table width="100%">
                                                     <tr>
-                                                        <td align="center" width="33%">
+                                                        <td align="center" width="34%">
                                                             <img src="image01/icons8-lesson-64.png" width="50" height="50"><br>
                                                             <p>Access to all video lessons</p>
                                                         </td>
-                                                        <td align="center" width="33%">
+                                                        <td align="center" width="34%">
                                                             <img src="image01/icons8-general-ledger-64.png" width="50" height="50"><br>
                                                             <p>Quizzes, practice exams & worksheets</p>
                                                         </td>
-                                                        <td align="center" width="33%">
+                                                        <td align="center" width="31%">
                                                             <img src="image01/icons8-question-64.png" width="50" height="50"><br>
                                                             <p>Access to experts for homework questions</p>
                                                         </td>
@@ -186,6 +192,9 @@
                                     </table>
                                 </ol>
                               </form>
+                              <br>
+                              <a href="#Forms">BackToForms</a>
+
                             </td>
                         </tr>
                         <tr>
